@@ -7,6 +7,9 @@ description: Learn to use AWS Network Load Balancer with AWS Load Balancer Contr
 - Understand more about 
   - **AWS Cloud Provider Load Balancer Controller (Legacy):** Creates AWS CLB and NLB
   - **AWS Load Balancer Controller (Latest):** Creates AWS ALB and NLB
+  we can create NLB with kubernetes service object by using AWS ALB Controller.
+  Target type :Instance ----client request will be forwared to worker nodes(means worker nodes are added as targets in target group)-->pods
+  Target Type: IP----client request will be directly forwarded to pods(pods are added as targets in target group).
 - Understand how the Kubernetes Service of Type Load Balancer which can create AWS NLB to be associated with latest `AWS Load Balancer Controller`. 
 - Understand various NLB Annotations
 
